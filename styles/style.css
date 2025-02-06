@@ -56,21 +56,19 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px auto;
-  grid-template-rows: 534px;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   gap: 30px;
   margin: auto;
 }
 
 .content__details {
-  height: 534px;
+  /* min-height: 534px; */
   width: 399px;
 }
 
 .content__list-container {
   overflow-y: auto;
-  overflow-x: hidden;
   max-height: 298px;
   position: relative;
   width: 399px;
@@ -82,7 +80,7 @@ ol {
   display: flex;
   width: 711px;
   height: 386px;
-  margin-bottom: 19px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -119,17 +117,17 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 30.6px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -154,7 +152,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-decoration-skip-ink: none;
@@ -164,7 +162,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: left;
@@ -234,7 +232,7 @@ ol {
   border: 1px solid transparent;
   border-top-color: #fff;
   border-bottom-color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -295,7 +293,7 @@ input[type='checkbox']:checked+span:after {
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -309,7 +307,7 @@ input[type='checkbox']:checked+span:after {
 
 .button.search-form__submit-button {
   width: 194px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .button:hover {
@@ -361,9 +359,4 @@ input[type='checkbox']:checked+span:after {
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
-}
-
-.preloader {
-  position: relative;
-  inset: 0;
 }
